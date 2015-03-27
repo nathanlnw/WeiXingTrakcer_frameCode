@@ -35,7 +35,3 @@ extern void   Trker_HwDrv_gpsLED_Ctrl(u8  value);
 
 
 
-//   State  checking  
-extern  void  Trker_HwDrv_Total_checking(void)£»   //  ×´Ì¬¼ì²â
-
-

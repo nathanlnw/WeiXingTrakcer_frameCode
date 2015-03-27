@@ -284,24 +284,6 @@ void   Trker_HwDrv_gpsLED_Ctrl(u8  value) //  gps 灯控制
 
 
 
-//   State  checking           put   it's  in  100ms   timer
-void  Trker_HwDrv_Total_checking(void)   //  状态检测
-{
-
-   //  1. 传感器检测
-   Trker_HwDrv_shake_checking();     //   震动传感器
-
-   //  2.  外部断电电源检测
-   Trker_HwDrv_CutpowerCheck();     
-   
-   //  3.  紧急报警按键处理
-   Trker_HwDrv_EmergenButton_checking();  
-   
-}
-
-
-
-
 //  gps    Part        ---------------------------------------------------------
 void Trker_gps_init(void)
 { // gpio   usart  init

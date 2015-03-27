@@ -1,20 +1,3 @@
----- Status_Word Matches (21 in 4 files) ----
-Functions.c (e:\tracker_卫星跟踪器\正式项目文档分解\1. 软件\src_prepare\src):		   if(work_var.Status_Word&STATUS_SHAKING)  
-Functions.c (e:\tracker_卫星跟踪器\正式项目文档分解\1. 软件\src_prepare\src):	   if((work_var.Status_Word&STATUS_SHAKING)&&((work_var.Status_Word&STATUS_ACC)==0x0000))
-Functions.c (e:\tracker_卫星跟踪器\正式项目文档分解\1. 软件\src_prepare\src):	   if((work_var.Status_Word&STATUS_ACC)&&(Anti_theft.rx_enable_anti_theft_sms))
-Functions.c (e:\tracker_卫星跟踪器\正式项目文档分解\1. 软件\src_prepare\src):     if((work_var.Status_Word&STATUS_SHAKING)&&(work_var.Status_Word&STATUS_ACC))
-Functions.h (e:\tracker_卫星跟踪器\正式项目文档分解\1. 软件\src_prepare\src):  u16   Status_Word;    /*  车辆状态     ACC              bit0: 1on  0:0ff    
-Gps.c (e:\tracker_卫星跟踪器\正式项目文档分解\1. 软件\src_prepare\src):		   	   work_var.Status_Word|=STATUS_SPDWARN;
-Gps.c (e:\tracker_卫星跟踪器\正式项目文档分解\1. 软件\src_prepare\src):		 work_var.Status_Word&=~STATUS_SPDWARN;
-Hardware.c (e:\tracker_卫星跟踪器\正式项目文档分解\1. 软件\src_prepare\src):   	  if(!(work_var.Status_Word&STATUS_BATTERY))
-Hardware.c (e:\tracker_卫星跟踪器\正式项目文档分解\1. 软件\src_prepare\src):		    work_var.Status_Word|=STATUS_BATTERY;  //bit 5
-Hardware.c (e:\tracker_卫星跟踪器\正式项目文档分解\1. 软件\src_prepare\src):		 if(work_var.Status_Word&STATUS_BATTERY)
-Hardware.c (e:\tracker_卫星跟踪器\正式项目文档分解\1. 软件\src_prepare\src):			  work_var.Status_Word&=~STATUS_BATTERY;  //bit 5       
-Hardware.c (e:\tracker_卫星跟踪器\正式项目文档分解\1. 软件\src_prepare\src):       if(!(work_var.Status_Word&STATUS_ACC))
-Hardware.c (e:\tracker_卫星跟踪器\正式项目文档分解\1. 软件\src_prepare\src):       work_var.Status_Word|=STATUS_ACC;  //bit 4
-Hardware.c (e:\tracker_卫星跟踪器\正式项目文档分解\1. 软件\src_prepare\src):       if(work_var.Status_Word&STATUS_ACC)
-Hardware.c (e:\tracker_卫星跟踪器\正式项目文档分解\1. 软件\src_prepare\src):       work_var.Status_Word&=~STATUS_ACC;  //bit 4          
-Hardware.c (e:\tracker_卫星跟踪器\正式项目文档分解\1. 软件\src_prepare\src):       if(!(work_var.Status_Word&STATUS_SHAKING))  // 在未震动状态情况下
-Hardware.c (e:\tracker_卫星跟踪器\正式项目文档分解\1. 软件\src_prepare\src):		       work_var.Status_Word|=STATUS_SHAKING;  //bit 1
-Hardware.c (e:\tracker_卫星跟踪器\正式项目文档分解\1. 软件\src_prepare\src):	    if(work_var.Status_Word&STATUS_SHAKING)
-Hardware.c (e:\tracker_卫星跟踪器\正式项目文档分解\1. 软件\src_prepare\src):             work_var.Status_Word&=~STATUS_SHAKING;  //bit 1
+---- GSM_Module_LED_timer Matches (2 in 2 files) ----
+Gsm.c (e:\tracker_卫星跟踪器\正式项目文档分解\1. 软件\src_prepare\src):void  GSM_Module_LED_timer(void)
+Gsm.h (e:\tracker_卫星跟踪器\正式项目文档分解\1. 软件\src_prepare\src):extern void  GSM_Module_LED_timer(void);
